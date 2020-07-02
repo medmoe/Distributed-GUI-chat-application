@@ -43,8 +43,8 @@ public class ChatServer extends Application {
             //load the postgresql driver
             Class.forName("org.postgresql.Driver");
 
-            //connect to the database
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost/db_first", "postgres", "105Bro@dst");
+            //connect to the database . this line should be adjusted according to your database configurationS
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost/database", "postgres", "password");
 
         } catch (ClassNotFoundException ex) {
             System.out.println(ex.toString());
